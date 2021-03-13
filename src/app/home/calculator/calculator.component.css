@@ -1,0 +1,81 @@
+.calculator-card {
+  padding: 16px 3%;
+  margin-right: 10px;
+  border-radius: 12px;
+  width: 40%;
+  box-shadow: 0px 8px 15px rgb(0 0 0 / 15%);
+}
+.calculator-card:after {
+  content: "";
+  background: url('../../../assets/images/accounting_dots.svg');
+  background-size: contain;
+  width: 90%;
+  height: 100px;
+  z-index: -1;
+  display: block;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -68%;
+  bottom: -15%;
+}
+.mat-card-content {
+  position: relative;
+}
+.mat-slider-horizontal {
+  width: 100%;
+}
+.card-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.full-width {
+  width: 100%;
+}
+.amount-text {
+  color:#999999;
+  position: absolute;
+  bottom: 0;
+}
+mat-card-title {
+  padding-bottom: 10%;
+  text-align: center;
+}
+.amount-text:last-child {
+  right: 1%;
+}
+.calculation-result-card {
+  padding: 6% 1.5%;
+  height: 80%;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+  width: 20%;
+  background-color: #663399;
+  color: #fff;
+  align-self: center;
+  box-shadow: 0px 8px 15px rgb(0 0 0 / 29%);
+}
+.result-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.result-container div {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+.result-container h4 {
+  margin: 0px;
+  font-weight: 100;
+  text-align: center;
+}
+.is-loan-exist-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

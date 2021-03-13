@@ -1,0 +1,54 @@
+  <div class="card-container">
+    <mat-card class="calculator-card">
+      <mat-card-title>Eligibility Calculator</mat-card-title>
+      <mat-card-content>
+        <mat-card-subtitle>Monthly Income</mat-card-subtitle>
+        <h3>&#8377; {{ monthlyIncome }}</h3>
+        <span class="amount-text"> &#8377; 100000</span>
+        <mat-slider color="primary" max="300000" min="100000" value="0" [(ngModel)]="monthlyIncome"></mat-slider>
+        <span class="amount-text"> &#8377; 300000</span>
+      </mat-card-content>
+      <mat-card-content>
+        <mat-card-subtitle>Monthly Expense</mat-card-subtitle>
+        <h3>&#8377;{{ monthlyExpense }}</h3>
+        <mat-slider color="primary" max="800000" min="0" value="0" [(ngModel)]="monthlyExpense"></mat-slider>
+      </mat-card-content>
+      <mat-card-content>
+        <mat-form-field class="full-width">
+          <mat-label>Repayment Tenure</mat-label>
+          <mat-select name="repayTenure">
+            <mat-option *ngFor="let item of tenure" [value]="item">
+              {{ item }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </mat-card-content>
+      <mat-card-content class="is-loan-exist-section">
+        <span>Do you have existing loans?</span>
+        <mat-slide-toggle color="primary"></mat-slide-toggle>
+      </mat-card-content>
+      <mat-card-content>
+        <mat-form-field class="full-width">
+          <mat-label>EMI of existing loan (optional)</mat-label>
+          <input matInput>
+        </mat-form-field>
+      </mat-card-content>
+    </mat-card>
+    <section class="calculation-result-card">
+      <div class="result-container">
+        <section>
+          <h4>Loan Amount</h4>
+          <div>
+            &#8377; 1,00,0000
+          </div>
+        </section>
+        <section>
+          <h4>Your EMI will be</h4>
+          <div>&#8377; 15,000</div>
+        </section>
+        <section>
+          <a href="#" class="default-btn">GET MONEY</a>
+        </section>
+      </div>
+    </section>
+  </div>

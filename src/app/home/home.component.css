@@ -1,0 +1,141 @@
+.top-section {
+  display: flex;
+  margin-bottom: 10%;
+}
+.left-section {
+  background-image: url("../../assets/images/blob-small.svg");
+  background-repeat: no-repeat;
+  padding-top: 12.6%;
+  background-position: top 180px left -233px;
+  background-size: auto;
+  width: 40%;
+}
+.left-section-wrapper {
+  padding-left: 17%;
+}
+.left-section-wrapper h1 {
+  font-size: 40px;
+  line-height: 50px;
+  text-align: left;
+  color: #000;
+  padding: 2% 10% 0 10%;
+  font-family: 'Montserrat', sans-serif;
+}
+.left-section-wrapper h1:after,
+.bottom-right-section h1:after {
+  background: #000 none repeat scroll 0 0;
+  content: "";
+  display: block;
+  height: 6px;
+  border-radius: 50px;
+  margin-top: 15px;
+}
+.left-section-wrapper h1:after {
+  width: 60%;
+}
+.bottom-right-section h1:after {
+  width: 40%;
+  margin-top: 10%;
+}
+.left-section-wrapper img {
+  width: 100%;
+}
+.left-section .img-container {
+  position: relative;
+}
+.left-section-wrapper .img-container:after {
+  content: "";
+  background: url('../../assets/images/accounting_dots.svg');
+  background-size: contain;
+  width: 65%;
+  height: 100px;
+  z-index: 1;
+  display: block;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -102px;
+  bottom: -60px;
+}
+.left-section .img-container .dotted-img {
+  position: absolute;
+  bottom: -25px;
+  right: -15%;
+  width: 60%;
+}
+.cards-section {
+  padding: 0 8%;
+  margin-top: -25%;
+  display: flex;
+  flex-basis: 100%;
+  overflow: hidden;
+  background: linear-gradient(180deg, transparent, #e8edff, #f1f5ff, white);
+}
+.cards-container {
+  height: 970px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-basis: 70%;
+  flex: 2;
+  flex-shrink: 1;
+}
+.cards-container > * {
+  flex: 0 0;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  background-color: #f9f9f9;
+  margin: 25px;
+  width: 44%;
+  min-height: 270px;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 3% 4% 5% 4%;
+  box-shadow: 0px 0px 30px #2321321f;
+}
+.cards-container > *:hover {
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  background-color: #9f62c982;
+  box-shadow: 0px 0px 30px #2321321f;
+  color: #fff;
+}
+.cards-container p {
+  color: #999999;
+}
+app-cards h1 {
+  font-size: 16px;
+}
+app-cards:hover .card-content {
+  color: #fff;
+}
+.bottom-right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 18px;
+  flex-basis: 30%;
+  flex: 1;
+  margin-top: 1%;
+  margin-bottom: 3%;
+  padding: 5%;
+}
+.bottom-right-section p { 
+  color: #777777;
+}
+.bottom-section {
+  display: block;
+  background-image: url("../../assets/images/wave.svg");
+  padding-top: 24.5%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+app-calculator {
+  width: 60%;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/images/circle.svg");
+  padding-top: 14.6%;
+  background-position: bottom -100px right -100px;
+  background-size: auto;
+}
